@@ -1,7 +1,7 @@
 ---
 import { plainify } from "@lib/textConverter";
 import Footer from "@components/base/Footer.astro";
-import Header from "@components/base/Header.astro";
+import Header from "@components/base/Header.astro"
 import ObserverScript from "@components/base/ObserverScript.astro";
 import "@/styles/main.scss";
 import { ClientRouter } from "astro:transitions";
@@ -47,7 +47,7 @@ const baseUrl = "https://janedoe.com";
       sizes="16x16"
       href="/favicon/favicon-16x16.png"
     />
-    
+
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <meta name="theme-name" content="pages" />
@@ -126,14 +126,14 @@ const baseUrl = "https://janedoe.com";
       integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh"
       crossorigin="anonymous"
       onload="renderMathInElement(document.body);"></script>
-      
+
     <!-- https://docs.astro.build/en/guides/view-transitions -->
     <ClientRouter fallback="swap" />
     <Tooltips interactive={false} delay={[333, 0]} />
   </head>
   <body>
     <Background />
-    <Header />
+    <Header/>
     <main id="main-content" class="flex-1">
       <slot/>
     </main>

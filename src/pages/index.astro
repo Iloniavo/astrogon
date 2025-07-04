@@ -1,9 +1,3 @@
 ---
-import { getIndex } from "@lib/contentParser";
-import EntryLayout from "@components/home/EntryLayout.astro";
-import type { HomeEntry } from "@/types";
-
-const entry = (await getIndex("home")) as HomeEntry;
+return Astro.redirect('/docs/characters/classes');
 ---
-
-<EntryLayout entry={entry} />
